@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/environment2"
+tools:context=".ui.Details">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:fontFamily="@font/lexend_deca"
+                android:gravity="center_horizontal"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:textSize="40dp"
+                tools:text="Nombre" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/ivImage"
+                android:layout_width="411dp"
+                android:layout_height="191dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingEnd="25sp"
+                android:paddingBottom="20sp"
+                app:riv_corner_radius="10dp"
+                tools:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tvGender"
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordes"
+                android:fontFamily="@font/lexend_deca"
+                android:paddingStart="15dp"
+                android:paddingTop="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:text="Género: " />
+
+            <TextView
+                android:id="@+id/tvProfession"
+                android:layout_width="394dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordes"
+                android:fontFamily="@font/lexend_deca"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:text="Profesión: " />
+
+            <TextView
+                android:id="@+id/tvPosition"
+                android:layout_width="394dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordes"
+                android:fontFamily="@font/lexend_deca"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:text="Posicion" />
+
+            <TextView
+                android:id="@+id/tvHair"
+                android:layout_width="396dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordes"
+                android:fontFamily="@font/lexend_deca"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:text="Cabello" />
+
+            <TextView
+                android:id="@+id/tvEnemies"
+                android:layout_width="match_parent"
+                android:layout_height="143dp"
+                android:background="@drawable/bordes"
+                android:fontFamily="@font/lexend_deca"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:text="Enemigos" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
